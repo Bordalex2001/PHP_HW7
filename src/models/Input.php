@@ -7,6 +7,13 @@ class Input extends Control
     private $name;
     private $value;
 
+    public function __construct($background, $width, $height, $name, $value)
+    {
+        parent:: __construct($background, $width, $height);
+        $this->name = $name;
+        $this->value = $value;
+    }
+
     public function getName()
     {
         return $this->name;

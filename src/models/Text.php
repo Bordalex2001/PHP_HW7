@@ -9,7 +9,12 @@ class Text extends Input
     public function __construct($background, $width, $height, $name, $value, $placeholder)
     {
         parent:: __construct($background, $width, $height, $name, $value);
-        $this->placeholder = $placeholder;
+        $this->setBackground($background);
+        $this->setWidth($width);
+        $this->setHeight($height);
+        $this->setName($name);
+        $this->setValue($value);
+        $this->setPlaceholder($placeholder);
     }
 
     public function getPlaceholder()
